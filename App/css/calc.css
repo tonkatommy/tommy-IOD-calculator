@@ -65,6 +65,7 @@ body {
   background: linear-gradient(180deg, #fbb 0%, #ff8383 100%);
   border-radius: 10px;
   font-size: 36px;
+  overflow: hidden;
 }
 
 .btn {
