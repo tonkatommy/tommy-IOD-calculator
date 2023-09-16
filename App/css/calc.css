@@ -3,45 +3,106 @@ body {
   padding: 0;
 }
 
-.container {
-  width: 100%;
-  height: 100%;
+.title {
+  margin: 30px auto;
+  text-align: center;
+  font-family: "Lilita One", cursive;
+  font-size: 36px;
 }
 
 .calc-body {
   display: flex;
-  margin: 30px auto 0 auto;
   width: 350px;
-  height: 500px;
+  height: 550px;
+  margin: 30px auto 0 auto;
+  /* padding: 40px 10px; */
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
   background: #373737;
   border-radius: 20px;
+  font-family: "Lilita One", cursive;
+  font-size: 24px;
 }
 
-.calc-buttons {
+.calc-flex-row {
   display: flex;
-  /* width: 290px; */
-  /* margin: 0 auto; */
-  padding: 10px;
-  align-content: center;
+  justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.calc-flex-wrap {
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  flex-shrink: 0;
   flex-wrap: wrap;
-  color: #000;
+}
+
+.calc-flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .calc-display {
-  width: 270px;
-  height: 60px;
-
+  display: flex;
+  width: 220px;
+  height: 80px;
+  padding: 0px 25px;
+  justify-content: flex-end;
+  align-items: center;
   flex-shrink: 0;
-  background: linear-gradient(93deg, #ff9c9c 0%, #ffaeae 100.66%);
+  background: linear-gradient(180deg, #fbb 0%, #ff8383 100%);
   border-radius: 10px;
+  font-size: 36px;
 }
 
-.calc-small-button {
+.btn {
+  display: flex;
   width: 60px;
   height: 60px;
-  flex-shrink: 0;
-  background: linear-gradient(135deg, #ff6969 0%, #ff9d9d 100%);
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e22f2f 0%, #f95555 100%);
   border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.btn-wd {
+  width: 130px;
+  background: linear-gradient(102deg, #e22f2f 0%, #f95555 100%);
+}
+
+.btn-tall {
+  height: 95px;
+  flex-direction: column;
+  background: linear-gradient(158deg, #850000 0%, #bd2e2e 100%);
+}
+
+.bg-red {
+  background: linear-gradient(135deg, #e22f2f 0%, #f95555 100%);
+}
+
+.bg-dark-red {
+  background: linear-gradient(158deg, #850000 0%, #bd2e2e 100%);
+}
+
+.bg-light-red {
+  background: linear-gradient(135deg, #fa9d9d 0%, #fabfbf 100%);
+}
+
+.footer {
+  text-align: center;
+  font-family: "Lilita One", cursive;
+  font-size: 20px;
 }

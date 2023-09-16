@@ -3,32 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="css/calc.css" />
     <title>Tommy's Calculator App</title>
   </head>
   <body>
-    <div class="container">
-      <div class="calc-body">
-        <div class="calc-buttons">
-          <div class="calc-display">0123456789</div>
-          <div class="calc-small-button"></div>
-          <div class="calc-small-button"></div>
-          <div class="calc-small-button"></div>
-          <div class="calc-small-button"></div>
-          <div class="calc-small-button"></div>
-          <div class="calc-small-button"></div>
-          <div class="calc-small-button"></div>
-          <div class="calc-small-button"></div>
-          <div class="calc-small-button"></div>
-          <div class="calc-small-button"></div>
-          <div class="calc-small-button"></div>
-          <div class="calc-small-button"></div>
-          <div class="calc-small-button"></div>
-          <div class="calc-small-button"></div>
-          <div class="calc-small-button"></div>
-        </div>
+    <header>
+      <div class="title">Tommy's Basic Calculator</div>
+    </header>
+    <div class="calc-body">
+      <div class="calc-display">0</div>
+      <div class="calc-flex-row">
+        <div class="btn bg-light-red">Ac</div>
+        <div class="btn bg-light-red">C</div>
+        <div class="btn bg-dark-red">/</div>
+        <div class="btn bg-dark-red">*</div>
+      </div>
+      <div class="calc-flex-wrap">
+        <div class="btn">7</div>
+        <div class="btn">8</div>
+        <div class="btn">9</div>
+        <div class="btn">4</div>
+        <div class="btn">5</div>
+        <div class="btn">6</div>
+        <div class="btn">1</div>
+        <div class="btn">2</div>
+        <div class="btn">3</div>
+        <div class="btn btn-wd">0</div>
+        <div class="btn">.</div>
+      </div>
+      <div class="calc-flex-col">
+        <div class="btn bg-dark-red">-</div>
+        <div class="btn btn-tall">+</div>
+        <div class="btn btn-tall">=</div>
       </div>
     </div>
+    <footer>
+      <div class="footer">
+        <p>
+          A basic calculator <br />
+          Have a Play!
+        </p>
+        <p>
+          It has a few bugs, not much error checking <br />
+          but it works if you enter a number, choose an operation <br />
+          enter a second number and press =. <br />
+          PRESS &quot;Ac&quot; TO RESET!
+        </p>
+      </div>
+    </footer>
+
     <script src="js/calc.js"></script>
   </body>
 </html>
